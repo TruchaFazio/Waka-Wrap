@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
@@ -43,18 +44,60 @@
      </section>
         <br>
      <section class="section2">
-         <div id="galeria">
-                <img src="./images/wrapBondiola.jpg" alt="wrap de bondiola" >
-                <img src="./images/wrapPollo.png" alt="wrap de pollo" >
-                <img src="./images/wrapVeggie.png" alt="wrap de vegetales" >
-                <img src="./images/wrapCuadril.jpg" alt="wrap de cuadril" >
-                <img src="./images/wrap4Quesos.png" alt="wrap de 4 quesos">
-                <img src="./images/wrapYankee.jpg" alt="wrap Yankee">
-                <img src="./images/wrapPollo.png" alt="wrap zanahoria">
-                <img src="./images/wrapMila.jpg" alt="wrap milanesa">
-                <img src="./images/wrapPicante.jpg" alt="wrap picante">
-                <img src="./images/wrapAtun.jpg" alt="wrap de atun">
-         </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/wrapCuadril.jpg" class="d-block w-auto m-auto" alt="wrap de cuadril">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/wrap4Quesos.png" class="d-block w-auto m-auto" alt="wrap 4 quesos">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/wrapAtun.jpg" class="d-block w-auto m-auto" alt="wrap de atun">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/wrapBondiola.jpg" class="d-block w-auto m-auto" alt="wrap de bondiola">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/wrapMila.jpg" class="d-block w-auto m-auto" alt="wrap de mila">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/wrapPicante.jpg" class="d-block w-auto m-auto" alt="wrap picante">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/wrapPollo.png" class="d-block w-auto m-auto" alt="wrap de pollo">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/wrapVeggie.png" class="d-block w-auto m-auto" alt="wrap veggie">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/wrapYankee.jpg" class="d-block w-auto m-auto" alt="wrap yankee">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/wrapZanahoria.png" class="d-block w-auto m-auto" alt="wrap de zanahoria">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
      </section>
     </main>
     <footer class="footer">
@@ -68,5 +111,6 @@
                 </div>
     </footer>
     
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
