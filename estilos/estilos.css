@@ -1,0 +1,354 @@
+*{
+    font-family: 'DynaPuff', cursive;
+    padding: 5px;
+    margin: 0px;
+    box-sizing: border-box;   
+   
+}
+body{
+    background-image: url("../images/backround-comida.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    text-align: center;
+    color: aliceblue;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+.Index{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 380px 1fr 200px ;
+    grid-template-areas: 
+    "header header header header header"
+    "main main main main main"
+    "footer footer footer footer footer"
+}
+.carta{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 380px 1fr 1fr 200px;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "main main main"
+    "footer footer footer";
+}
+.cartaGrid{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 500px 500px;
+    grid-template-areas: 
+    "wraps lomos hamburguesas"
+    "pizzas pizzas picoteo";
+    justify-content: center;  
+}
+.wraps{
+    grid-area: wraps;
+}
+.lomos{
+    grid-area: lomos;
+}
+.hamburguesas{
+    grid-area: hamburguesas;
+}
+.pizzas{
+       grid-area: pizzas;
+}
+.picoteo{
+    grid-area: picoteo
+    ;
+}
+.cartaGrid li{
+    transition: 0.3s;
+}
+.Contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 380px 800px 200px ;
+    grid-template-areas: 
+    "header header header "
+    "main main main "
+    "footer footer footer ";
+}
+.sucursales{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 380px 1fr 200px;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+     "footer footer footer";
+}
+.sucursalesGrid{    
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+.rrhh{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 480px 400px 200px;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+.logo{
+    width: 250px;
+    transition: 1s;
+    }
+.logo:hover{
+    transform: rotate(720deg);
+}         
+li{
+    display: inline-block;
+}
+.menu img:hover{
+    transform: rotate(360deg);
+    transition: 0.3s;
+    background-color: rgba(20, 30, 40, 80%) ;
+    border: 1px solid yellow;
+    border-radius: 15px;
+    
+}
+.presentacion{
+    text-align: left;
+    transition: 1s;
+
+}
+.presentacion:hover{
+    border: 1px solid white;
+    border-radius: 25px;
+    background-color: rgba(20, 30, 40, 60%) ;
+    
+}
+#galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+#galeria img{
+    margin: auto;
+    width: 20%;
+    transition: 0.5s;
+    
+}
+#galeria img:hover{
+    transform: scale(1.2);
+    
+    border-radius: 15px;
+} 
+.redes img{
+    width: 50px;
+    opacity: .5;
+}
+.redes img:hover{
+    transform: scale(1.10);
+    opacity: 1;
+}
+.cartaGrid li:hover{
+    background-color: rgba(20, 30, 40, 80%) ;
+    border: 1px solid yellow;
+    border-radius: 15px;
+    transform: scale(1.50);
+}
+.infoContacto{
+    transition: 0.5s;
+}
+.infoContacto:hover{
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: rgba(20, 30, 40, 60%) ;
+}
+hr{
+    padding: 1px;
+}
+h1{
+    color: yellow;
+}
+h1:hover{
+    color: greenyellow;
+
+}
+
+/*   RESPONSIVE A PARTIR DE 1000PX   */
+
+@media screen and (max-width: 1000px){
+    .contenedorMedia{
+        background-image: linear-gradient(to bottom, black,  green, rgb(3, 26, 4));
+    }
+    .logo{
+        width: 150px;
+    }
+    .Index{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 250px 150px;
+        grid-template-areas: 
+        "header header header header header"
+        "main main main main main"
+        "main main main main main"
+        "footer footer footer footer footer"
+    }
+    body{
+        border: 1px solid white;
+        border-radius: 25px;
+    }
+    .presentacion{
+        border: 1px solid white;
+        border-radius: 25px;
+        background-color: rgba(20, 30, 40, 60%) ;
+        
+    }
+    #galeria img:hover{
+        transform: scale(2);
+        border-radius: 15px;
+    } 
+    .infoContacto{
+        border: 1px solid white;
+    border-radius: 25px;
+    background-color: rgba(20, 30, 40, 60%) 
+    } 
+    .mapa{
+        width: 400px;
+    }
+    .cartaGrid{
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "wraps"
+        "lomos"
+        "hamburguesas"
+        "pizzas"
+        "pizzas"
+        "picoteo";
+        justify-content: center;
+    }
+    .cartaGrid li:hover{
+        background-color: rgba(20, 30, 40, 80%) ;
+        border: 1px solid yellow;
+        border-radius: 15px;
+        transform: scale(1.10);
+    }
+    .Contacto{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 450px 800px 200px ;
+        grid-template-areas: 
+        "header header header header header"
+        "main main main main main"
+        "footer footer footer footer footer";
+    }
+    .sucursales{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 450px 1fr 200px;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+         "footer footer footer";
+    }
+    .sucursalesGrid{    
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+    }
+    .sucursal1{
+        border: 1px solid white;
+        border-radius: 25px;
+        background-color: rgba(20, 30, 40, 60%)
+    }
+    .sucursal2{
+        border: 1px solid white;
+        border-radius: 25px;
+        background-color: rgba(20, 30, 40, 60%)
+    }
+    .formularioCv{
+        border: 1px solid white;
+        border-radius: 25px;
+        background-color: rgba(20, 30, 40, 60%)
+    }
+    .redes img{
+        opacity: 1;
+    }
+    
+    /*   RESPONSIVE A PARTIR DE 480PX   */
+
+@media screen and (max-width: 480px){
+    .contenedorMedia{
+        background-image: background-image: linear-gradient(to bottom, black, green);
+    }
+    .logo{
+        width: 150px;
+    }
+    .Index{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 100px 150px;
+        grid-template-areas: 
+        "header header header header header"
+        "main main main main main"
+        "main main main main main"
+        "footer footer footer footer footer"
+    }
+    body{
+        border: 1px solid white;
+        border-radius: 25px;
+    }
+    .presentacion{
+        border: 1px solid white;
+        border-radius: 25px;
+        background-color: rgba(20, 30, 40, 60%) ;
+        
+    }
+    #galeria img:hover{
+        transform: scale(2);
+        border-radius: 15px;
+        }
+    .infoContacto{
+            border: 1px solid white;
+        border-radius: 25px;
+        background-color: rgba(20, 30, 40, 60%) 
+        } 
+    .mapa{
+        width: 400px;
+    }
+    .cartaGrid{
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "wraps"
+        "lomos"
+        "hamburguesas"
+        "pizzas"
+        "pizzas"
+        "picoteo";
+        justify-content: center;}
+    .cartaGrid li:hover{
+            background-color: rgba(20, 30, 40, 80%) ;
+            border: 1px solid yellow;
+            border-radius: 15px;
+            transform: scale(1.10);
+        }
+        .Contacto{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 700px 800px 200px ;
+            grid-template-areas: 
+            "header header header header header"
+            "main main main main main"
+            "footer footer footer footer footer";
+        }
+}     
+
