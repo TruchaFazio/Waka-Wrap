@@ -18,6 +18,7 @@ header{
     grid-area: header;
 }
 main{
+    padding-top: 10%;
     grid-area: main;
 }
 footer{
@@ -26,7 +27,7 @@ footer{
 .Index{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 380px 1fr 200px ;
+    grid-template-rows: 300px 1fr 200px ;
     grid-template-areas: 
     "header header header header header"
     "main main main main main"
@@ -131,20 +132,10 @@ li{
     background-color: rgba(20, 30, 40, 60%) ;
     
 }
-#galeria{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-}
-#galeria img{
-    margin: auto;
-    width: 20%;
-    transition: 0.5s;
-    
-}
-#galeria img:hover{
-    transform: scale(1.2);
-    
+.section2:hover{
+    transition: 0.3s;
+    background-color: rgba(20, 30, 40, 80%) ;
+    border: 1px solid yellow;
     border-radius: 15px;
 } 
 .redes img{
@@ -192,10 +183,9 @@ h1:hover{
     .Index{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 250px 150px;
+        grid-template-rows: 300px 1fr 150px;
         grid-template-areas: 
         "header header header header header"
-        "main main main main main"
         "main main main main main"
         "footer footer footer footer footer"
     }
@@ -204,15 +194,12 @@ h1:hover{
         border-radius: 25px;
     }
     .presentacion{
+
         border: 1px solid white;
         border-radius: 25px;
         background-color: rgba(20, 30, 40, 60%) ;
         
     }
-    #galeria img:hover{
-        transform: scale(2);
-        border-radius: 15px;
-    } 
     .infoContacto{
         border: 1px solid white;
     border-radius: 25px;
@@ -294,10 +281,9 @@ h1:hover{
     .Index{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 100px 150px;
+        grid-template-rows: 500px 1fr 150px;
         grid-template-areas: 
         "header header header header header"
-        "main main main main main"
         "main main main main main"
         "footer footer footer footer footer"
     }
@@ -311,10 +297,6 @@ h1:hover{
         background-color: rgba(20, 30, 40, 60%) ;
         
     }
-    #galeria img:hover{
-        transform: scale(2);
-        border-radius: 15px;
-        }
     .infoContacto{
             border: 1px solid white;
         border-radius: 25px;
@@ -344,11 +326,15 @@ h1:hover{
         .Contacto{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 700px 800px 200px ;
+            grid-template-rows: 400px 800px 200px ;
             grid-template-areas: 
             "header header header header header"
             "main main main main main"
             "footer footer footer footer footer";
         }
-}     
+}    
+.section2 img{
+    width: 300px;
+    
+}
 
