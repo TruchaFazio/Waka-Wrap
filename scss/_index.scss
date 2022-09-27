@@ -1,0 +1,46 @@
+.Index{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 300px 1fr 200px ;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    .section2:hover{
+        transition: 0.3s;
+        background-color: $fondo_gris ;
+        border: 1px solid yellow;
+        border-radius: 15px;
+    } 
+}
+
+/*  INDEX RESPONSIVE A PARTIR DE 1024PX   */
+
+@media screen and (max-width: 1024px){
+
+    .Index{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 300px 1fr 150px;
+        grid-template-areas: 
+        "header header header header header"
+        "main main main main main"
+        "footer footer footer footer footer"
+    }
+}
+
+/*  INDEX RESPONSIVE A PARTIR DE 480PX   */
+
+@media screen and (max-width: 480px){
+
+    .Index{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 500px 1fr 150px;
+        grid-template-areas: 
+        "header header header header header"
+        "main main main main main"
+        "footer footer footer footer footer";
+    }
+}
+

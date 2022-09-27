@@ -1,0 +1,94 @@
+$fondo_gris:rgba(20, 30, 40, 80%);
+
+*{
+    font-family: 'DynaPuff', cursive;
+    padding: 5px;
+    margin: 0px;
+    box-sizing: border-box;   
+   
+}
+body{
+    background-image: url("../images/backround-comida.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    text-align: center;
+    color: aliceblue;
+}
+hr{
+    padding: 1px;
+}
+h1{
+    color: yellow;
+    &:hover{
+        color: greenyellow;
+    
+    }
+}
+header{
+    grid-area: header;
+    .logo{
+        width: 250px;
+        transition: 1s;
+        &:hover{
+            transform: rotate(720deg);
+        } 
+        }
+    .menu{
+        img:hover{
+                transform: rotate(360deg);
+                transition: 0.3s;
+                background-color: $fondo_gris ;
+                border: 1px solid yellow;
+                border-radius: 15px;
+                
+            
+        }
+        
+    }
+}
+li{
+    display: inline-block;
+}
+main{
+    padding-top: 10%;
+    grid-area: main;
+}
+@import "index";
+@import "carta";
+@import "contacto";
+@import "sucursales";
+@import "rrhh";
+footer{
+    grid-area: footer;
+    .redes img{
+        width: 50px;
+        opacity: .5;
+        &:hover{
+            transform: scale(1.10);
+            opacity: 1;
+        }
+    }
+}
+
+/* BODY RESPONSIVE A PARTIR DE 1024PX   */
+@media screen and (max-width: 1024px){
+
+.contenedorMedia{
+    background-image: linear-gradient(to bottom, black,  green, rgb(3, 26, 4));
+}
+body{
+    border: 1px solid white;
+    border-radius: 25px;
+}
+.logo{
+    width: 150px;
+}
+
+.redes img{
+    opacity: 1;
+}
+
+}
+

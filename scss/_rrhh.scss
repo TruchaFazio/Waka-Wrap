@@ -1,0 +1,39 @@
+.rrhh{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 400px 200px;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+/*  RRHH RESPONSIVE A PARTIR DE 1024PX   */
+@media screen and (max-width: 1024px){
+    .rrhh{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 150px;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+        .formularioCv{
+            border: 1px solid white;
+            border-radius: 25px;
+            background-color: $fondo_gris
+        }
+}
+}
+
+ /*  RRHH RESPONSIVE A PARTIR DE 480PX   */
+
+ @media screen and (max-width: 480px){
+
+    .rrhh{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 200px 150px;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    }
+}

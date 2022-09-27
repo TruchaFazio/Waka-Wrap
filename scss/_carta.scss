@@ -1,0 +1,109 @@
+.carta{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 1fr 1fr 200px;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "main main main"
+    "footer footer footer";
+
+    .cartaGrid{
+        display: grid;
+        grid-template-columns: 350px 350px 350px;
+        grid-template-rows: 500px 500px;
+        grid-template-areas: 
+        "wraps lomos hamburguesas"
+        "pizzas pizzas picoteo";
+        justify-content: center;  
+        li{
+            transition: 0.3s;
+           &:hover{
+            background-color: $fondo_gris ;
+            border: 1px solid yellow;
+            border-radius: 15px;
+            transform: scale(1.25);
+        }
+        }
+    }
+   
+    .wraps{
+        grid-area: wraps;
+    }
+    .lomos{
+        grid-area: lomos;
+    }
+    .hamburguesas{
+        grid-area: hamburguesas;
+    }
+    .pizzas{
+           grid-area: pizzas;
+    }
+    .picoteo{
+        grid-area: picoteo
+        ;
+    }
+}
+
+/*  CARTA RESPONSIVE A PARTIR DE 1024PX   */
+@media screen and (max-width: 1024px){
+    .carta{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr auto 150px;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+        .cartaGrid{
+            display: grid;
+            grid-template-columns: 350px 350px;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "wraps lomos"
+            "pizzas pizzas"
+            "hamburguesas picoteo";
+            justify-content: center;
+            li:hover{
+                background-color: $fondo_gris ;
+                border: 1px solid yellow;
+                border-radius: 15px;
+                transform: scale(1.10);
+            }
+        }
+    }
+
+}
+/*  CARTA RESPONSIVE A PARTIR DE 480PX   */
+
+@media screen and (max-width: 480px){
+    .carta{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr auto 150px;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+        .cartaGrid{
+            display: grid;
+            grid-template-columns: 350px;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "wraps"
+            "lomos"
+            "hamburguesas"
+            "pizzas"
+            "pizzas"
+            "picoteo";
+            justify-content: center;
+            li:hover{
+                background-color: $fondo_gris ;
+                border: 1px solid yellow;
+                border-radius: 15px;
+                transform: scale(1.10);
+            }
+        }
+    }
+}
+

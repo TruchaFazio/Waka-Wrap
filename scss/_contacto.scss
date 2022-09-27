@@ -1,0 +1,80 @@
+.Contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 1fr 200px ;
+    grid-template-areas: 
+    "header header header "
+    "main main main "
+    "footer footer footer ";
+    .presentacion{
+        text-align: left;
+        transition: 1s;
+        &:hover{
+            border: 1px solid white;
+            border-radius: 25px;
+            background-color: rgba(20, 30, 40, 60%) ;
+            
+        }
+    
+    }
+    .infoContacto{
+        transition: 0.5s;
+        &:hover{
+            border: 1px solid white;
+            border-radius: 15px;
+            background-color: rgba(20, 30, 40, 60%) ;
+        }
+    }
+}
+/*  CONTACTO RESPONSIVE A PARTIR DE 1024PX   */
+
+@media screen and (max-width: 1024px){
+    .Contacto{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 800px 200px ;
+        grid-template-areas: 
+        "header header header header header"
+        "main main main main main"
+        "footer footer footer footer footer";
+        .presentacion{
+    
+            border: 1px solid white;
+            border-radius: 25px;
+            background-color: $fondo_gris ;
+            
+        }
+        .infoContacto{
+            border: 1px solid white;
+        border-radius: 25px;
+        background-color: $fondo_gris; 
+        } 
+    }
+}
+/*  CONTACTO RESPONSIVE A PARTIR DE 480PX   */
+
+@media screen and (max-width: 480px){
+    .Contacto{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 500px 1fr 150px ;
+        grid-template-areas: 
+        "header header header header header"
+        "main main main main main"
+        "footer footer footer footer footer";
+        .presentacion{
+            border: 1px solid white;
+            border-radius: 25px;
+            background-color: $fondo_gris ;
+            
+        }
+        .infoContacto{
+                border: 1px solid white;
+            border-radius: 25px;
+            background-color: $fondo_gris;
+            } 
+        .mapa{
+            width: 400px;
+        }
+    }
+}
