@@ -45,7 +45,9 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 300px 1fr 200px;
-  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+  grid-template-areas: "header header header"
+ "main main main"
+ "footer footer footer"; }
   .Index .section2:hover {
     transition: 0.3s;
     background-color: #141e28;
@@ -58,7 +60,9 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 300px 1fr 150px;
-    grid-template-areas: "header header header header header" "main main main main main" "footer footer footer footer footer"; } }
+    grid-template-areas: "header header header header header"
+ "main main main main main"
+ "footer footer footer footer footer"; } }
 
 /*  INDEX RESPONSIVE A PARTIR DE 480PX   */
 @media screen and (max-width: 480px) {
@@ -66,18 +70,24 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 500px 1fr 150px;
-    grid-template-areas: "header header header header header" "main main main main main" "footer footer footer footer footer"; } }
+    grid-template-areas: "header header header header header"
+ "main main main main main"
+ "footer footer footer footer footer"; } }
 
 .carta {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 300px 1fr 1fr 200px;
-  grid-template-areas: "header header header" "main main main" "main main main" "footer footer footer"; }
+  grid-template-areas: "header header header"
+ "main main main"
+ "main main main"
+ "footer footer footer"; }
   .carta .cartaGrid {
     display: grid;
     grid-template-columns: 350px 350px 350px;
     grid-template-rows: 500px 500px;
-    grid-template-areas: "wraps lomos hamburguesas" "pizzas pizzas picoteo";
+    grid-template-areas: "wraps lomos hamburguesas"
+ "pizzas pizzas picoteo";
     justify-content: center; }
     .carta .cartaGrid li {
       transition: 0.3s; }
@@ -103,12 +113,16 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr auto 150px;
-    grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+    grid-template-areas: "header header header"
+ "main main main"
+ "footer footer footer"; }
     .carta .cartaGrid {
       display: grid;
       grid-template-columns: 350px 350px;
       grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: "wraps lomos" "pizzas pizzas" "hamburguesas picoteo";
+      grid-template-areas: "wraps lomos"
+ "pizzas pizzas"
+ "hamburguesas picoteo";
       justify-content: center; }
       .carta .cartaGrid li:hover {
         background-color: #141e28;
@@ -122,12 +136,19 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr auto 150px;
-    grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+    grid-template-areas: "header header header"
+ "main main main"
+ "footer footer footer"; }
     .carta .cartaGrid {
       display: grid;
       grid-template-columns: 350px;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-areas: "wraps" "lomos" "hamburguesas" "pizzas" "pizzas" "picoteo";
+      grid-template-areas: "wraps"
+ "lomos"
+ "hamburguesas"
+ "pizzas"
+ "pizzas"
+ "picoteo";
       justify-content: center; }
       .carta .cartaGrid li:hover {
         background-color: #141e28;
@@ -139,7 +160,9 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 300px 1fr 200px;
-  grid-template-areas: "header header header " "main main main " "footer footer footer "; }
+  grid-template-areas: "header header header "
+ "main main main "
+ "footer footer footer "; }
   .Contacto .presentacion {
     text-align: left;
     transition: 1s; }
@@ -160,7 +183,9 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 800px 200px;
-    grid-template-areas: "header header header header header" "main main main main main" "footer footer footer footer footer"; }
+    grid-template-areas: "header header header header header"
+ "main main main main main"
+ "footer footer footer footer footer"; }
     .Contacto .presentacion {
       border: 1px solid white;
       border-radius: 25px;
@@ -176,7 +201,9 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 500px 1fr 150px;
-    grid-template-areas: "header header header header header" "main main main main main" "footer footer footer footer footer"; }
+    grid-template-areas: "header header header header header"
+ "main main main main main"
+ "footer footer footer footer footer"; }
     .Contacto .presentacion {
       border: 1px solid white;
       border-radius: 25px;
@@ -192,7 +219,9 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 300px 1fr 200px;
-  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+  grid-template-areas: "header header header"
+ "main main main"
+ "footer footer footer"; }
   .sucursales .sucursalesGrid {
     display: flex;
     flex-direction: row;
@@ -204,7 +233,9 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 450px 1fr 200px;
-    grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+    grid-template-areas: "header header header"
+ "main main main"
+ "footer footer footer"; }
     .sucursales .sucursalesGrid {
       display: flex;
       flex-direction: column;
@@ -224,20 +255,26 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 500px 1fr 200px;
-    grid-template-areas: "header header header" "main main main" "footer footer footer"; } }
+    grid-template-areas: "header header header"
+ "main main main"
+ "footer footer footer"; } }
 
 .rrhh {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 300px 400px 200px;
-  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+  grid-template-areas: "header header header"
+ "main main main"
+ "footer footer footer"; }
 
 /*  RRHH RESPONSIVE A PARTIR DE 1024PX   */
 @media screen and (max-width: 1024px) {
   .rrhh {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 150px;
-    grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+    grid-template-areas: "header header header"
+ "main main main"
+ "footer footer footer"; }
     .rrhh .formularioCv {
       border: 1px solid white;
       border-radius: 25px;
@@ -248,7 +285,9 @@ main {
   .rrhh {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 200px 150px;
-    grid-template-areas: "header header header" "main main main" "footer footer footer"; } }
+    grid-template-areas: "header header header"
+ "main main main"
+ "footer footer footer"; } }
 
 footer {
   grid-area: footer; }

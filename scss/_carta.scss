@@ -10,11 +10,13 @@
 
     .cartaGrid{
         display: grid;
-        grid-template-columns: 350px 350px 350px;
-        grid-template-rows: 500px 500px;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 500px auto 500px;
         grid-template-areas: 
-        "wraps lomos hamburguesas"
-        "pizzas pizzas picoteo";
+        "dia wraps wraps toppings"
+        "carta carta  carta carta"
+        "combos combos cafeteria cafeteria"
+        ;
         justify-content: center;  
         li{
             transition: 0.3s;
@@ -24,24 +26,27 @@
             border-radius: 15px;
             transform: scale(1.25);
         }
-        }
     }
+
+}
    
+    .wrapsDia{
+        grid-area: dia;
+    }
     .wraps{
         grid-area: wraps;
     }
-    .lomos{
-        grid-area: lomos;
+    .toppings{
+        grid-area: toppings;
     }
-    .hamburguesas{
-        grid-area: hamburguesas;
+    .cartaCompleta{
+        grid-area: carta;
     }
-    .pizzas{
-           grid-area: pizzas;
+    .combos{
+           grid-area: combos;
     }
-    .picoteo{
-        grid-area: picoteo
-        ;
+    .cafeteria{
+        grid-area: cafeteria;
     }
 }
 
@@ -58,17 +63,21 @@
         .cartaGrid{
             display: grid;
             grid-template-columns: 350px 350px;
-            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-rows: 500px 500px auto 500px;
             grid-template-areas: 
-            "wraps lomos"
-            "pizzas pizzas"
-            "hamburguesas picoteo";
+            "dia  wraps"
+            "toppings toppings"
+            "carta carta"
+            "combos cafeteria";
             justify-content: center;
             li:hover{
                 background-color: $fondo_gris ;
                 border: 1px solid yellow;
                 border-radius: 15px;
-                transform: scale(1.10);
+                transform: scale(1);
+            }
+            .cartaCompleta img{
+                width: 650px;
             }
         }
     }
@@ -88,14 +97,14 @@
         .cartaGrid{
             display: grid;
             grid-template-columns: 350px;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr auto 1fr;
             grid-template-areas: 
+            "dia"
             "wraps"
-            "lomos"
-            "hamburguesas"
-            "pizzas"
-            "pizzas"
-            "picoteo";
+            "toppings"
+            "carta"
+            "combos"
+            "cafeteria";
             justify-content: center;
             li:hover{
                 background-color: $fondo_gris ;
@@ -103,7 +112,8 @@
                 border-radius: 15px;
                 transform: scale(1.10);
             }
-        }
+            }
+            .cartaCompleta{display: none;}
     }
 }
 

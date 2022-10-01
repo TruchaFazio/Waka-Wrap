@@ -7,11 +7,11 @@
     "main main main"
     "footer footer footer";
 }
-/*  RRHH RESPONSIVE A PARTIR DE 1024PX   */
-@media screen and (max-width: 1024px){
+/*  RRHH RESPONSIVE A PARTIR DE 980PX   */
+@media screen and (max-width: 980px){
     .rrhh{
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 150px;
+        grid-template-rows: auto 1fr 150px;
         grid-template-areas: 
         "header header header"
         "main main main"
@@ -24,13 +24,13 @@
 }
 }
 
- /*  RRHH RESPONSIVE A PARTIR DE 480PX   */
+ /*  RRHH RESPONSIVE A PARTIR DE 360PX   */
 
- @media screen and (max-width: 480px){
+ @media screen and (max-width: 360px){
 
     .rrhh{
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 200px 150px;
+        grid-template-rows: auto 200px 150px;
         grid-template-areas: 
         "header header header"
         "main main main"

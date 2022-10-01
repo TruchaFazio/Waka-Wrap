@@ -26,13 +26,13 @@
         }
     }
 }
-/*  CONTACTO RESPONSIVE A PARTIR DE 1024PX   */
+/*  CONTACTO RESPONSIVE A PARTIR DE 980PX   */
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 980px){
     .Contacto{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 800px 200px ;
+        grid-template-rows: auto 1fr 200px ;
         grid-template-areas: 
         "header header header header header"
         "main main main main main"
@@ -49,15 +49,18 @@
         border-radius: 25px;
         background-color: $fondo_gris; 
         } 
+    .mapa{
+        width: 700px;
+    }
     }
 }
-/*  CONTACTO RESPONSIVE A PARTIR DE 480PX   */
+/*  CONTACTO RESPONSIVE A PARTIR DE 360PX   */
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 360px){
     .Contacto{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 500px 1fr 150px ;
+        grid-template-rows: auto 1fr 150px ;
         grid-template-areas: 
         "header header header header header"
         "main main main main main"

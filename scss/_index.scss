@@ -1,7 +1,7 @@
 .Index{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 300px 1fr 200px ;
+    grid-template-rows: auto auto 200px ;
     grid-template-areas: 
     "header header header"
     "main main main"
@@ -14,14 +14,14 @@
     } 
 }
 
-/*  INDEX RESPONSIVE A PARTIR DE 1024PX   */
+/*  INDEX RESPONSIVE A PARTIR DE 980PX   */
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 980px){
 
     .Index{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 300px 1fr 150px;
+        grid-template-rows: auto 1fr 150px;
         grid-template-areas: 
         "header header header header header"
         "main main main main main"
@@ -29,18 +29,21 @@
     }
 }
 
-/*  INDEX RESPONSIVE A PARTIR DE 480PX   */
+/*  INDEX RESPONSIVE A PARTIR DE 360PX   */
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 360px){
 
     .Index{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 500px 1fr 150px;
+        grid-template-rows: auto 1fr 150px;
         grid-template-areas: 
         "header header header header header"
         "main main main main main"
         "footer footer footer footer footer";
+        
+
     }
+    
 }
 
