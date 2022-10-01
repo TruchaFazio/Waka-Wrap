@@ -124,8 +124,8 @@ main {
   grid-area: cafeteria;
 }
 
-/*  CARTA RESPONSIVE A PARTIR DE 1024PX   */
-@media screen and (max-width: 1024px) {
+/*  CARTA RESPONSIVE A PARTIR DE 980PX   */
+@media screen and (max-width: 980px) {
   .carta {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -149,8 +149,8 @@ main {
     width: 650px;
   }
 }
-/*  CARTA RESPONSIVE A PARTIR DE 480PX   */
-@media screen and (max-width: 480px) {
+/*  CARTA RESPONSIVE A PARTIR DE 540PX   */
+@media screen and (max-width: 540px) {
   .carta {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
