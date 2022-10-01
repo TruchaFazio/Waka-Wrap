@@ -74,8 +74,8 @@ main {
     grid-template-areas: "header header header header header" "main main main main main" "footer footer footer footer footer";
   }
 }
-/*  INDEX RESPONSIVE A PARTIR DE 360PX   */
-@media screen and (max-width: 360px) {
+/*  INDEX RESPONSIVE A PARTIR DE 540PX   */
+@media screen and (max-width: 540px) {
   .Index {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -220,8 +220,8 @@ main {
     width: 700px;
   }
 }
-/*  CONTACTO RESPONSIVE A PARTIR DE 360PX   */
-@media screen and (max-width: 360px) {
+/*  CONTACTO RESPONSIVE A PARTIR DE 540PX   */
+@media screen and (max-width: 540px) {
   .Contacto {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -278,8 +278,8 @@ main {
     background-color: rgba(20, 30, 40, 0.8);
   }
 }
-/*  SUCURSALES RESPONSIVE A PARTIR DE 360PX   */
-@media screen and (max-width: 360px) {
+/*  SUCURSALES RESPONSIVE A PARTIR DE 540PX   */
+@media screen and (max-width: 540px) {
   .sucursales {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -307,8 +307,8 @@ main {
     background-color: rgba(20, 30, 40, 0.8);
   }
 }
-/*  RRHH RESPONSIVE A PARTIR DE 360PX   */
-@media screen and (max-width: 360px) {
+/*  RRHH RESPONSIVE A PARTIR DE 540PX   */
+@media screen and (max-width: 540px) {
   .rrhh {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 200px 150px;
