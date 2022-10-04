@@ -10,9 +10,7 @@
         text-align: left;
         transition: 1s;
         &:hover{
-            border: 1px solid white;
-            border-radius: 25px;
-            background-color: rgba(20, 30, 40, 60%) ;
+            @include fondo-hover;
             
         }
     
@@ -20,9 +18,7 @@
     .infoContacto{
         transition: 0.5s;
         &:hover{
-            border: 1px solid white;
-            border-radius: 15px;
-            background-color: rgba(20, 30, 40, 60%) ;
+           @include fondo-hover;
         }
     }
 }

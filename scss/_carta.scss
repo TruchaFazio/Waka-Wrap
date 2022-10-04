@@ -21,9 +21,7 @@
         li{
             transition: 0.3s;
            &:hover{
-            background-color: $fondo_gris ;
-            border: 1px solid yellow;
-            border-radius: 15px;
+            @include fondo-hover;
             transform: scale(1.25);
         }
     }
@@ -71,9 +69,7 @@
             "combos cafeteria";
             justify-content: center;
             li:hover{
-                background-color: $fondo_gris ;
-                border: 1px solid yellow;
-                border-radius: 15px;
+                @include fondo-hover;
                 transform: scale(1);
             }
             .cartaCompleta img{
@@ -107,9 +103,7 @@
             "cafeteria";
             justify-content: center;
             li:hover{
-                background-color: $fondo_gris ;
-                border: 1px solid yellow;
-                border-radius: 15px;
+                @include fondo-hover;
                 transform: scale(1.10);
             }
             }

@@ -1,5 +1,12 @@
 $fondo_gris:rgba(20, 30, 40, 80%);
 
+@mixin fondo-hover {
+    background-color: $fondo_gris ;
+                border: 1px solid yellow;
+                border-radius: 15px;
+    
+}
+
 *{
     font-family: 'DynaPuff', cursive;
     padding: 5px;
@@ -39,12 +46,8 @@ header{
         img:hover{
                 transform: rotate(360deg);
                 transition: 0.3s;
-                background-color: $fondo_gris ;
-                border: 1px solid yellow;
-                border-radius: 15px;
-                
-            
-        }
+                @include fondo-hover();
+             }
         
     }
 }

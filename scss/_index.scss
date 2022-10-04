@@ -8,9 +8,7 @@
     "footer footer footer";
     .section2:hover{
         transition: 0.3s;
-        background-color: $fondo_gris ;
-        border: 1px solid yellow;
-        border-radius: 15px;
+        @include fondo-hover;
     } 
 }
 
